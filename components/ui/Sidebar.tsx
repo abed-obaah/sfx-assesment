@@ -41,9 +41,9 @@ const payments = [
 ]
 
 const commerce = [
-  { name: 'Referrals', img: '/referrals.png' },
+  { name: 'Referrals', img: '/Referrals.png' },
   { name: 'Audit logs', img: '/Audit-logs.png' },
-  { name: 'Settings', img: '/settings.png' },
+  { name: 'Settings', img: '/Settings.png' },
 ]
 
 
