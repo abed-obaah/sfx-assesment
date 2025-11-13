@@ -46,23 +46,23 @@ export default function StatsCards() {
               <ResponsiveContainer>
                 <PieChart>
   <Pie
-    data={successData}
-    cx="50%"
-    cy="50%"
-    innerRadius={60}
-    outerRadius={80}
-    dataKey="value"
-    startAngle={90}
-    endAngle={-270}
-  >
-    {successData.map((entry, index) => (
-      <Cell
-        key={`cell-${index}`}
-        fill={COLORS[index % COLORS.length]}
-        cornerRadius={entry.name === "Successful" ? 40 : 0} // big rounding only on Successful
-      />
-    ))}
-  </Pie>
+        data={successData}
+        cx="50%"
+        cy="50%"
+        innerRadius={60}
+        outerRadius={80}
+        dataKey="value"
+        startAngle={90}
+        endAngle={-270}
+      >
+        {successData.map((entry, index) => (
+          <Cell
+            key={`cell-${index}`}
+            fill={COLORS[index % COLORS.length]}
+            cornerRadius={entry.name === "Successful" ? 40 : 0}
+          />
+        ))}
+      </Pie>
                 </PieChart>
               </ResponsiveContainer>
               <div className="absolute inset-0 flex items-center justify-center">
